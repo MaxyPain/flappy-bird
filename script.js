@@ -20,7 +20,7 @@ message.classList.add('messageStyle');
 
 document.addEventListener('keydown', (e) => {
     
-    if(e.key == 'Enter' || e.key =='touch' && game_state != 'Play'){
+    if(e.key == 'Enter' && game_state != 'Play'){
         document.querySelectorAll('.pipe_sprite').forEach((e) => {
             e.remove();
         });
@@ -74,15 +74,15 @@ function play(){
         if(game_state != 'Play') return;
         bird_dy = bird_dy + grativy;
         document.addEventListener('keydown', (e) => {
-            if(e.key == 'Space' || e.key == 'touch' || e.key == ' '){
+            if(e.key == 'Space' || e.key == ' '){
                 img.src = 'images/bird.png';
                 bird_dy = -7.6;
             }
         });
 
         document.addEventListener('keyup', (e) => {
-            if(e.key == 'Space' || e.key == 'touch' || e.key == ' '){
-                img.src = 'images/bird.png';
+            if(e.key == 'Space' || e.key == ' '){
+                img.src = 'images/bird-2.png';
             }
         });
 
