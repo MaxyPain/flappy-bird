@@ -82,7 +82,7 @@ function play(){
 
         document.addEventListener('keyup', (e) => {
             if(e.key == 'Space' || e.key == 'touch' || e.key == ' '){
-                img.src = 'images/Bird.png';
+                img.src = 'images/bird.png';
             }
         });
 
