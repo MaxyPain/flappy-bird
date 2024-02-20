@@ -75,7 +75,7 @@ function play(){
         bird_dy = bird_dy + grativy;
         document.addEventListener('keydown', (e) => {
             if(e.key == 'Space' || e.key == 'touch' || e.key == ' '){
-                img.src = 'images/Bird-2.png';
+                img.src = 'images/bird-2.png';
                 bird_dy = -7.6;
             }
         });
